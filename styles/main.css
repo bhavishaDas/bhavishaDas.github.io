@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Playball&display=swap');
+body {
+    background-color: #f2d9e5;
+  }
+  .algin-center {
+    text-align: center;
+  }
+  .google-fonts-playball {
+    font-family: 'Playball', sans-serif;
+  }
+  .img-size {
+        max-width:450px;
+        max-height:450px;
+    }
+    .container {
+        position: fixed;
+        text-align: center;
+        color: black;
+    }
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(252, 251, 251, 0.824); 
+        font-size: 30px;
+        padding: 10px 10px 10px 10px;
+    }
+    a {
+        color: black;
+      }
