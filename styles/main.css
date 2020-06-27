@@ -5,6 +5,9 @@ body {
   a {
     color: black;
   }
+  a:hover {
+    background-color: #f2c0d8;
+  }
   .algin-center {
     text-align: center;
   }
@@ -19,7 +22,7 @@ body {
     padding: 10px;
   }
   .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #f2d9e5;
     text-align: center;
     padding: 200px 200px 200px 200px;
     font-size: 30px;
@@ -40,5 +43,20 @@ body {
   }
   .gridbackground3 {
     background-image: url("../img/rb.jpg");
+    background-size: cover;
+  }
+  .imgsize {
+    max-width: 450px;
+    max-height: 450px;
+  }
+  .gridpagetwo1 {
+    background-color: pink;
+  }
+  .gridpagetwo2 {
+    background-image: url("../img/Arch1.jpg");
+    background-size: cover;
+  }
+  .gridpagetwo3 {
+    background-image: url("../img/Arch2.jpg");
     background-size: cover;
   }
