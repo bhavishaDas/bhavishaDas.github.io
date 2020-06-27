@@ -2,40 +2,42 @@
 body {
     background-color: #f2d9e5;
   }
+  a {
+    color: black;
+  }
   .algin-center {
     text-align: center;
   }
   .google-fonts-playball {
     font-family: 'Playball', sans-serif;
   }
-  .img-size {
-        max-width:450px;
-        max-height:450px;
+  .grid-container {
+    display: grid;
+    grid-template: 500px / auto auto auto;
+    grid-gap: 10px;
+    background-color: #f2d9e5;
+    padding: 10px;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+    .gridbackground1 {
+      background-image: url("../img/fam5.jpg");
+      background-size: cover;
     }
-    .container {
-        position: fixed;
-        text-align: center;
-        color: black;
-    }
-    .centered {
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(252, 251, 251, 0.824); 
-        font-size: 30px;
-        padding: 10px 10px 10px 10px;
-    }
-    a {
-        color: black;
-      }
-      .container-middle {
-        position: relative;
-        text-align: center;
-        color: black;
-      }
-    .container-right {
-      position: left;
-      text-align: center;
+    .textbackground {
+      display: inline;
+      background-color: rgba(252, 251, 251, 0.824);
       color: black;
     }
+  .gridbackground2 {
+    background-image: url("../img/girls.jpg");
+    background-size: cover;
+  }
+  .gridbackground3 {
+    background-image: url("../img/rb.jpg");
+    background-size: cover;
+  }
