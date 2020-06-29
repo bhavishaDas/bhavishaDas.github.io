@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Differences between relative, absolute and fixed positioning? </title>
+  <meta charset="UTF-8">
+  <link href="../styles/main.css" rel="stylesheet" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <h1> Positioning Properties in CSS</h1>
+  <h2>Relative </h2>
+
+  <p>
+    Say if we have to move an element on the Web page, we can do so using something known as a position attribute.
+    <br>
+    In our example, we intend to move the element down by 50 pixels.
+
+    <strong>Example</strong>: Attempting to move the element down without using the <strong>position</strong> property.
+  <div>
+    <img src="../img/without-relative.png" alt="screen shot" width="1200" height="400"> </img>
+  </div>
+  <br>
+  As shown in the example above the element didn't move. To fix this, we will add a position property known as
+  relative.This will move the element down by 50px as we intend to.
+  <br> The key word relative moves the element relative to the position attribute, in this case 50px down - super
+  confusing but yet makes sense
+
+  <div>
+    <img src="../img/withRelative.png" alt="screen shot" width="1200" height="400"> </img>
+  </div>
+
+  <h2> Absolute </h2>
+  <p>
+    If we want to position an element within another element (A div inside another div), we can use a property called
+    absolute.
+
+    This is an extemely powerful type of positioning that allows us to literally place any page element exactly where we
+    want it using the positioning attributes top, left, bottom, and right.
+
+    A massive <strong>Gotcha</strong> is that the positioning will be relative to the next parent. If there is no such
+    parent, it will default all the way back up to the <html> element itself meaning it will be placed relative to the
+    page itself.
+
+    <br> Confused? Let's try to illustrate this concept using examples.
+    The image below shows two divs, one nested (a child) within the other. In this case, we can use absolute which
+    positions the element exactly where we want it to be
+
+    <div>
+      <img src="../img/absolute.png" alt="screen shot" width="1200" height="400"> </img>
+    </div>
+
+    What happens if these divs are not nested? Lets have a look<br>
+
+    <div>
+      <img src="../img/without-abs.png" alt="screen shot" width="1200" height="400"> </img>
+    </div>
+
+    So what happened here? Remember we mentioned that for absolute to work, the positioning will be relevant to its
+    parent. Since this div does not have a parent, it will be placed relative to the
+    page itself.
+
+    <h2>Fixed </h2>
+    A fixed position element is positioned relative to the viewport (viewing area of the web page). The viewport doesn’t
+    change when the window is scrolled, so a fixed positioned element will stay right where it is when the page is
+    scrolled.
+
+    This can come in handy if say we want to implement a nav bar and we want it to be visible regardless of the page scroll position.
+
+    Images below shows how the fixed property changes the position on the element.
+
+    When Fixed is applied 
+    <br>
+    <div>
+      <img src="../img/fixed.png" alt="screen shot" width="1200" height="400"> </img>
+    </div>
+    When Fixed is not applied 
+    <br>
+    <div>
+      <img src="../img/notfixed.png" alt="screen shot" width="1200" height="400"> </img>
+    </div>
+    
+</body>
+
+</html>
